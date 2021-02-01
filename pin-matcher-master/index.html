@@ -77,6 +77,9 @@
                 if(isNaN(digit)){
                     //handle backspace
                     //handle clear
+                    if(digit === 'C'){
+                        document.getElementById("calculatorValue").value = "";
+                    }
                 }else{
                     const calculationNumber = document.getElementById("calculatorValue");
                     calculationNumber.value = calculationNumber.value + digit;
